@@ -1,0 +1,116 @@
+/* Homepage Specific Styles */
+
+/* Define the exact brand colors */
+:root {
+  --primary-light: #8976FB;
+  --primary-dark: #664DFF;
+  --background-gradient-from: #F7F4FF;
+  --background-gradient-to: #F0EBFF;
+}
+
+.home-fade-in {
+  animation: homeFadeIn 0.7s ease-out forwards;
+}
+
+.home-slide-up {
+  animation: homeSlideUp 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.home-slide-left {
+  animation: homeSlideLeft 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.home-slide-right {
+  animation: homeSlideRight 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.delay-100 {
+  animation-delay: 100ms;
+}
+
+.delay-200 {
+  animation-delay: 200ms;
+}
+
+.delay-300 {
+  animation-delay: 300ms;
+}
+
+.delay-400 {
+  animation-delay: 400ms;
+}
+
+.delay-500 {
+  animation-delay: 500ms;
+}
+
+@keyframes homeFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes homeSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes homeSlideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes homeSlideRight {
+  from {
+    opacity: 0;
+    transform: translateX(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* SuiteOp brand gradient for buttons */
+.suiteop-button-gradient {
+  background: linear-gradient(135deg, #8976FB 0%, #664DFF 100%);
+  border: none;
+  transition: opacity 0.3s ease;
+}
+
+.suiteop-button-gradient:hover {
+  opacity: 0.9;
+}
+
+/* Purple gradient for hero heading */
+.hero-gradient-text {
+  background: linear-gradient(135deg, #8976FB 0%, #664DFF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Background gradient */
+.suiteop-bg-gradient {
+  background: linear-gradient(135deg, #F7F4FF 0%, #F0EBFF 100%);
+}
+
+/* Banner gradient */
+.suiteop-banner-bg {
+  background-color: rgba(102, 77, 255, 0.05);
+}
